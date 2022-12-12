@@ -96,7 +96,7 @@ func (repo *dynamoDBTransactionRepository) GetTransactionByID(ctx context.Contex
 	return transaction, nil
 }
 
-func (repo *dynamoDBTransactionRepository) AddTransaction(ctx context.Context, transaction model.Transaction) error {
+func (repo *dynamoDBTransactionRepository) AddTransaction(ctx context.Context, transaction *model.Transaction) error {
 	av, err := attributevalue.MarshalMapWithOptions(transaction, func(opts *attributevalue.EncoderOptions) {
 		opts.TagKey = "json"
 	})

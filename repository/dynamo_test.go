@@ -116,7 +116,7 @@ func Test_dynamoDBTransactionRepository_Integration(t *testing.T) {
 	repo := NewDynamoIntegrationTestRepository(t)
 
 	for _, transaction := range testTransactions {
-		if err := repo.AddTransaction(context.Background(), *transaction); err != nil {
+		if err := repo.AddTransaction(context.Background(), transaction); err != nil {
 			t.Fatalf("could not add transaction: %v", err)
 		}
 	}
