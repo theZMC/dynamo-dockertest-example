@@ -1,5 +1,5 @@
 # Better DynamoDB Tests in Go with dockertest
-## This is a companion repo for my blog post on [Better DynamoDB tests in Go with dockertest](https://zmc.dev/posts/better-dynamodb-tests-in-go-with-dockertest). For convenience, the full post content is included below.
+## This is a companion repo for my blog post on [Better DynamoDB tests in Go with dockertest](https://zmc.dev/posts/better-dynamodb-testing-with-dockertest). For convenience, the full post content is included below.
 ## What is `dockertest`?
 `dockertest` is a Go library that enables programmatic control of Docker containers. The only requirement is that you have Docker
 (or a compatible container runtime) installed on your machine with a docker socket available to you. Having the ability to
